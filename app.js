@@ -3,7 +3,7 @@ const express = require('express');
 
 let app = express();
 
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
 
 const getIpRouter = require('./router/get_ip');
 app.use('/get-ip', getIpRouter);
