@@ -9,7 +9,7 @@ app.listen(process.env.PORT || 3000);
 const getIpRouter = require('./router/get_ip');
 
 app.use('/', router.get('', function(req, res){
-    res.send('Welcome!');
+    res.send('Welcome shohag!');
 })
 );
 app.use('/get-ip', getIpRouter);
